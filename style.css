@@ -1,5 +1,6 @@
 @import url('https://fonts.google.com/specimen/Poppins');
 @import url('https://fonts.google.com/specimen/Open+Sans');
+
 *{
     box-sizing: border-box;
 }
@@ -57,18 +58,107 @@ button{
     width: 80%;
     margin: 100px 0px 0px
 }
-.container-2{
+.container-2, .container-3, .container-4{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5% auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(253 253 253);
+    padding: 50px;
+}
+.container-2 img{
+    width: 70%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 25%;   
+}
+.container-2-left{
+    width: 50%;
+    padding: 70px;
+}
+.container-2-left p, h1{
+    min-width: 40%;
+    max-width: 80%;
 
 }
-.container-3{
+.container-2-right{
+    width: 50%;
+    /*padding: 70px;*/ 
+}
+
+.container-3 img{
+    width: 70%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    /*left: 25%; */  
+}
+.container-3-left p, h1{
+    min-width: 40%;
+    max-width: 80%;
 
 }
-.container-4{
+.container-3-right{
+    width: 50%;
+    padding: 70px;
+}
 
+.container-4 img{
+    width: 70%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 25%;   
 }
 .call-action-container{
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 10% auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(253 253 253);
+    padding: 50px;
+}
+.call-action-container h3, button {
+    margin: 1% auto;
+}
+.call-action-container button {
+    color: #ffffff;
 }
 .footer-container{
     background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    display: flex;
+    padding: 100px 30px;
+    width: 100%;
 }
+.footer-contact-details, .footer-quick-links-1, .footer-quick-links-2, .footer-far-right{
+    width: 25%;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .logo-footer{
+    width: 70%;
+    position: relative;
+    top: -15%;
+}
+.footer-container img{
+    width: 16px;
+    position: relative;
+    top: 10%;
+}
+.footer-contact-details p{
+    position: relative;
+    left: 10%;
+    margin: 10px 12px;
+}
+
