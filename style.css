@@ -9,10 +9,11 @@ body{
     margin: 0px;
     background-color: whitesmoke;
     font-size: 18px;
-    font-family: Open Sans;
+    font-family: Poppins;
     font-weight: 400;
 }
-h {
+
+ h1{
     font-family: Poppins;
     font-weight: 600;
 }
@@ -34,7 +35,7 @@ button{
     display: flex;
 }
 .header-container-left{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     /* align-content: stretch; */
@@ -43,20 +44,35 @@ button{
 }
 .header-container-left h1{
     text-align: left;
-    margin: 50px 0px;
+    margin: 35% 0px 0px
+}
+.header-container-left p{
+    text-align: left;
+    margin: 7% 0px 6%
+}
+.header-container-left button{
+    color: white;
+    min-width: 20%;
+    max-width: 50%;
+    width: 100%;
+    margin: 5% 0px 0px;
 }
 
 .header-container-right{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    /* align-content: stretch; */
-    /* justify-content: space-evenly; */
     align-items: flex-end;
 }
 .header-container-right img{
     width: 80%;
     margin: 100px 0px 0px
+}
+.header-container-right button{
+    /*width: 80%;
+    margin: 100px 0px 0px*/
+    color: black;
+    background-color: white;
 }
 .container-2, .container-3, .container-4{
     display: flex;
@@ -127,8 +143,10 @@ button{
     background-color: rgb(253 253 253);
     padding: 50px;
 }
-.call-action-container h3, button {
-    margin: 1% auto;
+.call-action-container button {
+   min-width: 20%;
+   max-width: 40%;
+   width: 100%;
 }
 .call-action-container button {
     color: #ffffff;
@@ -140,14 +158,20 @@ button{
     padding: 100px 30px;
     width: 100%;
 }
-.footer-contact-details, .footer-quick-links-1, .footer-quick-links-2, .footer-far-right{
-    width: 25%;
+.footer-contact-details{
+    width: 40%;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-quick-links-1, .footer-quick-links-2, .footer-far-right{
+    width: 20%;
     margin: 10px 20px;
     display: flex;
     flex-direction: column;
 }
 .footer-container .logo-footer{
-    width: 70%;
+    width: 40%;
     position: relative;
     top: -15%;
 }
@@ -160,5 +184,199 @@ button{
     position: relative;
     left: 10%;
     margin: 10px 12px;
+    min-width: 30%;
+    max-width: 70%;
+}
+.social-media-icons{
+    height: 100%;
+}
+
+/* mobile design max width 400px*/
+@media screen  and (max-width:400px) {
+    .header-container{
+        background-color: hsl(193, 100%, 96%);
+        background-image: url('/images/bg-hero-desktop.svg');
+        width: 100%;
+        height: 30%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-container-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container-left h1 {
+        text-align: center;
+        margin: 35% 0px 0px;
+    }
+    .header-container-left p {
+        text-align: center;
+        margin: 7% 0px 6%;
+    }
+    .header-container-left img{
+        width: 35%;
+        position: absolute;
+        left: 1%;
+        margin: 10px 10px;
+    }
+    .header-container-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container-right button {
+        color: black;
+        background-color: white;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        margin: 10px 10px;
+        padding: 10px 14px;
+    }
+    .header-container-left button {
+        color: white;
+        min-width: 20%;
+        max-width: 80%;
+        width: 100%;
+        margin: 5% 0px 0px;
+    }
+    .container-2, .container-3, .container-4 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90%;
+        margin: 5% auto;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(253 253 253);
+        padding: 20px;
+    }
+    .container-2-left {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    .container-2-right{
+        width: 100%;
+        padding: 0px;
+    }
+    /*.container-2-left p, h1{
+        min-width: 40%;
+        max-width: 80%;
+    
+    }*/
+    .container-2 img{
+        width: 70%;
+        margin: auto;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        left: 10%;  
+
+    }
+    .container-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 5% auto;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(253 253 253);
+        padding: 20px;
+    }
+    .container-3 img{
+        width: 70%;
+        margin: auto;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        left: 10%;  
+
+    }
+    /*.container-3-left p, h1{
+        min-width: 40%;
+        max-width: 80%;
+    
+    }*/
+    .container-3-right {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .container-4 img{
+        width: 70%;
+        margin: auto;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        left: 10%;  
+
+    }
+
+    .container-4-left p, h1{
+        min-width: 40%;
+        max-width: 80%;
+    
+    }
+    .call-action-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 10% auto;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(253 253 253);
+        padding: 10px;
+    }
+    .call-action-container button {
+        min-width: 30%;
+        max-width: 60%;
+        width: 100%;
+    }
+    .footer-container {
+        background-color: hsl(192, 100%, 9%);
+        color: hsl(193, 100%, 96%);
+        display: flex;
+        padding: 50px 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-container .logo-footer {
+        width: 55%;
+    }
+    .footer-contact-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contact-details p {
+        position: relative;
+        left: 10%;
+        margin: 10px 12px;
+        width: 100%;
+    }
+    .footer-quick-links-2, .footer-quick-links-1, .footer-far-right {
+        width: 100%;
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-media-icons {
+        height: 100%;
+        margin: 20px 0px;
+    }
+    .footer-far-right{
+        align-items: center;
+    }
+
+   
+
 }
 
